@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will You Be My Valentine Ann ?</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(#ffdee9, #b5fffc);
+      font-family: 'Comic Sans MS', cursive;
+      text-align: center;
+      color: #ff4d6d;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid #ff4d6d;
+      margin-top: 20px;
+    }
+
+    h1 {
+      margin-top: 20px;
+      font-size: 26px;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 15px;
+    }
+
+    button {
+      padding: 12px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .yes {
+      background-color: #ff4d6d;
+      color: white;
+    }
+
+    .no {
+      background-color: #ffd6e0;
+      color: #ff4d6d;
+    }
+
+    .heart {
+      font-size: 40px;
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="heart">❤️</div>
+
+    <!-- HER PHOTO -->
+    <img src="c:\Users\hp\Desktop\New folder\WhatsApp Image 2026-01-29 at 8.41.38 PM.jpeg" alt="My Favorite Person">
+
+    <h1>Hey My Love 💕</h1>
+
+    <p>
+      Every moment with you feels special,<br>
+      and my heart smiles whenever I think of you
+      Ann, my heart chose you without any doubt—will you be my Valentine?.
+    </p>
+
+    <h1>Will you be my Valentine Ann? 💌</h1>
+
+    <!-- SONG -->
+    <audio controls autoplay loop>
+      <source src="c:\Users\hp\Downloads\Ambarsariya Fukrey 128 Kbps.mp3" type="audio/mpeg">
+      Your browser does not support audio.
+    </audio>
+
+    <br><br>
+
+    <!-- BUTTONS -->
+    <button class="yes" onclick="yesClicked()">YES 💖</button>
+    <button class="no" onclick="noClicked()">NO 😢</button>
+
+  </div>
+
+  <script>
+    function yesClicked() {
+      document.body.innerHTML = `
+        <div style="padding:40px;">
+          <h1>YAYYYYY 😍💖</h1>
+          <p>You just made me the happiest person alive!</p>
+          <div style="font-size:50px;">❤️❤️❤️</div>
+        </div>
+      `;
+    }
+
+    function noClicked() {
+      alert("Please think again 🥺💔");
+    }
+  </script>
+
+</body>
+</html>
